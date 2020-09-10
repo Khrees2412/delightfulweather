@@ -59,9 +59,21 @@ export default function Sport() {
      {isLoading && <div className="loading">Loading ...</div> }
           <div className="sport-box">
             {  
-            data.map((item,index) => (
-            <h3 key={index}>{item.football.stadium}</h3>
-             
+            data.football.map((item,index) => (
+                <div key={index}>
+            
+             <div>Match: <span>{item.match}</span></div>
+             <br/>
+             <div>Time starts: <span>{item.start}</span></div>
+             <br/>
+             <div>Tournament: <span>{item.tournament}</span></div>
+             <br/>
+             <div>Stadium: <span>{item.stadium}</span></div>
+             <br/>
+             <div>Country: <span>{item.country}</span></div>
+             <br/>
+             <div><span></span></div>
+             </div>
             ))}
           </div>
         

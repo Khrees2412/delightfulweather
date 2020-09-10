@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import Sport from "./components/Sport"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <Route path="/sports" component = {Sport} />
     <Route exact path="/" component={Home}/>
   </Switch>
+  <Footer/>
 </Router>
    
   );

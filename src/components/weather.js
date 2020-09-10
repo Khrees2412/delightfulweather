@@ -30,7 +30,7 @@ return(
       
 </div>
 <div className="img-div">
-<h2>{value.condition.text}{""}{value.temp_c}</h2>
+<h2>{value.condition.text}&nbsp;{value.temp_c} &#8451;</h2>
       <img className="img" src={value.condition.icon} alt="weatherImage" />
     </div>
     </div>
