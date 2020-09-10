@@ -7,19 +7,20 @@ return(
     <div className="location box">
       <div>
       <h3>Location Data</h3>
-      <div>Name:  {data.name}</div>
+      <div>Name:  <span>{data.name}</span></div>
       
     <br/>
-    <div> Region: {data.region}</div>
+    <div> Region: <span>{data.region}</span></div>
       
     <br/>
-    <div> Country: {data.country}</div>
+    <div> Country: <span>{data.country}</span></div>
    
     <br/>
-    <div>  Date & Time: {data.localtime}</div>
+    <div>  Date & Time: <span>{data.localtime}</span></div>
   
         <br/>
-      <div>Latitude: {data.lat} longitude: {data.lon}
+      <div>Latitude: <span>{data.lat} </span>
+      longitude: <span>{data.lon}</span>
       </div>
       
 </div>
