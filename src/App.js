@@ -27,7 +27,7 @@ export default App;
 
 function Home(){
   const [data, setData] = useState([]);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("Lagos");
   const [url, setUrl] = useState(
     "https://api.weatherapi.com/v1/current.json?key=e25888b22b87474fac4193103200709&q=lagos"
   );
@@ -57,6 +57,7 @@ function Home(){
     <Fragment>
    <Navbar />
    <div className="body">
+   <h2 className="title">Check the Weather data for any city</h2>
       <div className="container">
         <label>Enter any City</label>
       <input
@@ -73,7 +74,7 @@ function Home(){
       </button>
       </div>
  {error && <div className="error"> Failed to load!
-   <br/> Check your network connection </div>}
+   <br/> Check your network connection and try again</div>}
    {isLoading && <div className="loading">Loading ...</div> }
         <div >
           {  

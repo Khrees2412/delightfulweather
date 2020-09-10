@@ -1,6 +1,6 @@
 import React,{useState,useEffect,Fragment} from "react"
 import axios from "axios"
-import Navbar from "./Navbar"
+import {Link} from "react-router-dom"
 
 
 export default function Sport() {
@@ -33,7 +33,11 @@ export default function Sport() {
    
     return (
       <Fragment>
-        <Navbar />
+        <header className="navbar">
+            <div>Weather For Me</div>
+            <Link to="/">Home</Link>
+        </header>
+        <div className="body">
         <h2 className="title">Check the Sport data for any city</h2>
         <div className="container">
           <label>Enter any City</label>
@@ -61,13 +65,14 @@ export default function Sport() {
             ))}
           </div>
         
-       <div>
-       Powered by <a href="https://www.weatherapi.com/"
-        title="Free Weather API">WeatherAPI.com</a>
-        <br/>
-        <img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' 
-        alt="Weather Data By WeatherAPI.com" border="0"/>
-       </div>
+          <div className="ack">
+    <p> Powered by <a href="https://www.weatherapi.com/"
+      title="Free Weather API">WeatherAPI.com</a></p>
+      <br/>
+      <img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' 
+      alt="Weather Data By WeatherAPI.com" border="0"/>
+     </div>
+     </div>
       </Fragment>
     );
   }

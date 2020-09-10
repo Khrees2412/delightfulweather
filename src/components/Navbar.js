@@ -6,11 +6,11 @@ import {Link} from "react-router-dom"
 export default function Navbar(){
     return(
       <Fragment>
-<nav className="navbar">
-  <h1>Weather For Me</h1>
+<header className="navbar">
+  <div>Weather For Me</div>
   <Link to="/sports">Sports Info</Link>
  
-</nav>
+</header>
       </Fragment>
     )
 }

@@ -16,16 +16,21 @@ return(
     <div> Country: <span>{data.country}</span></div>
    
     <br/>
-    <div>  Date & Time: <span>{data.localtime}</span></div>
-  
+    <div> Date & Time: <span>{data.localtime}</span></div>
+    <br/>
+    <div>Wind Degree: <span>{value.wind_degree}</span></div>
+    <br/>
+    <div>Wind Direction: <span>{value.wind_dir}</span></div>
+    <br/>
+    <div>Humidity: <span>{value.humidity}</span></div>
         <br/>
       <div>Latitude: <span>{data.lat} </span>
-      longitude: <span>{data.lon}</span>
+      Longitude: <span>{data.lon}</span>
       </div>
       
 </div>
 <div className="img-div">
-      <h2>{value.text}</h2>
+<h2>{value.condition.text}{""}{value.temp_c}</h2>
       <img className="img" src={value.condition.icon} alt="weatherImage" />
     </div>
     </div>
