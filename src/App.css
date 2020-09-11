@@ -142,6 +142,10 @@ footer{
   input{
     width: 250px;
   }
+  .box{
+    flex-direction: column;
+  }
+ 
 }
 @media screen and (max-width:768px){
   .container,.box,.sport-box{

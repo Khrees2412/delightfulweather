@@ -61,7 +61,6 @@ export default function Sport() {
             {  
             data.map(initItem => initItem.map((item,index) =>
                   <div key={index} className="sport-box">
-           // {console.log(item)}
              <div>Match: <span>{item.match}</span></div>
              <br/>
              <div>Time starts: <span>{item.start}</span></div>
