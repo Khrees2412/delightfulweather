@@ -18,7 +18,7 @@ export default function Sport() {
         setIsLoading(true);
    
         const result = await axios(url);
-        console.log(result.data.football);
+       // console.log(result.data.football);
         const myData = result.data.football;
         setData([myData]);
         setIsLoading(false);}
@@ -61,7 +61,7 @@ export default function Sport() {
             {  
             data.map(initItem => initItem.map((item,index) =>
                   <div key={index} className="sport-box">
-            {console.log(item)}
+           // {console.log(item)}
              <div>Match: <span>{item.match}</span></div>
              <br/>
              <div>Time starts: <span>{item.start}</span></div>

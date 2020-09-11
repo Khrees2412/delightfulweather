@@ -42,7 +42,7 @@ function Home(){
       setIsLoading(true);
  
       const result = await axios(url);
-      console.log(result.data);
+    //  console.log(result.data);
       const myData = result.data;
       setData([myData]);
       setIsLoading(false);}
