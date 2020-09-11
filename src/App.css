@@ -147,7 +147,7 @@ footer{
   }
  
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:500px){
   .container,.box,.sport-box{
     width: 250px;
   }
