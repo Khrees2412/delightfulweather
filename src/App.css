@@ -4,9 +4,8 @@
 }
 body{
     font-family: 'Noto Sans JP', sans-serif;
-    background-color:white;
+    background-color:whitesmoke;
     color:black;
-    
 }
 .body{
   display: flex;
@@ -96,29 +95,48 @@ span{
   color: blue;
 }
 .sport-box{
-  background-color: yellowgreen;
+  background-color: lightblue;
   color: black;
   padding: 20px;
   margin: 15px;
   border-radius: 5px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+}
+.sport-box span{
+  color: red;
 }
 .ack{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 100px 0px 60px;
+  align-items: center;
+  margin: 25px auto ;
+  font-size: 12px;
+}
+.ack img{
+  width: 4rem;
 }
 footer{
-  padding: 20px;
-  background-color: pink;
+  padding: 10px;
+  background-color: gainsboro;
   color: black;
   font-size: 16px;
   font-weight: 550;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  
 }
 
 @media screen and (max-width:768px){
-  .container,.box{
+  .container,.box,.sport-box{
     width:400px
   }
 }

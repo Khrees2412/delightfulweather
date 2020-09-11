@@ -5,9 +5,9 @@ import {Link} from "react-router-dom"
 
 export default function Sport() {
     const [data, setData] = useState([]);
-    const [query, setQuery] = useState("");
+    const [query, setQuery] = useState("London");
     const [url, setUrl] = useState(
-      "https://api.weatherapi.com/v1/sports.json?key=e25888b22b87474fac4193103200709&q=lagos"
+      "https://api.weatherapi.com/v1/sports.json?key=e25888b22b87474fac4193103200709&q=london"
     );
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null)
