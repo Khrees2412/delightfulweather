@@ -95,7 +95,14 @@ button{
 span{
   color: blue;
 }
+.sport-box{
+  background-color: yellowgreen;
+  color: black;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
 
+}
 .ack{
   display: flex;
   flex-direction: column;

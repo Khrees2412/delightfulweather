@@ -18,8 +18,8 @@ export default function Sport() {
         setIsLoading(true);
    
         const result = await axios(url);
-        console.log(result.data);
-        const myData = result.data;
+        console.log(result.data.football);
+        const myData = result.data.football;
         setData([myData]);
         setIsLoading(false);}
         catch(err){
@@ -38,7 +38,7 @@ export default function Sport() {
             <Link to="/">Home</Link>
         </header>
         <div className="body">
-        <h2 className="title">Check the Sport data for any city</h2>
+        <h2 className="title">Check the Football data for any city</h2>
         <div className="container">
           <label>Enter any City</label>
         <input
@@ -57,11 +57,11 @@ export default function Sport() {
    {error && <div className="error"> Failed to load!
      <br/> Check your network connection </div>}
      {isLoading && <div className="loading">Loading ...</div> }
-          <div className="sport-box">
+          <div >
             {  
-            data.football.map((item,index) => (
-                <div key={index}>
-            
+            data.map(initItem => initItem.map((item,index) =>
+                  <div key={index} className="sport-box">
+            {console.log(item)}
              <div>Match: <span>{item.match}</span></div>
              <br/>
              <div>Time starts: <span>{item.start}</span></div>
@@ -74,16 +74,11 @@ export default function Sport() {
              <br/>
              <div><span></span></div>
              </div>
-            ))}
+             )
+            )}
           </div>
         
-          <div className="ack">
-    <p> Powered by <a href="https://www.weatherapi.com/"
-      title="Free Weather API">WeatherAPI.com</a></p>
-      <br/>
-      <img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' 
-      alt="Weather Data By WeatherAPI.com" border="0"/>
-     </div>
+         
      </div>
       </Fragment>
     );
