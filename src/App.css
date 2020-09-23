@@ -44,7 +44,7 @@ h3{
   width: 600px;
   margin:  20px auto;
   padding:5rem ;
-  background-color: gainsboro;
+  background-color: ghostwhite;
 }
 .title{
   text-align: center;
@@ -123,7 +123,7 @@ span{
 }
 footer{
   padding: 10px;
-  background-color: gainsboro;
+  background-color: ghostwhite;
   color: black;
   font-size: 16px;
   font-weight: 550;
@@ -137,10 +137,10 @@ footer{
 
 @media screen and (max-width:768px){
   .container,.box,.sport-box{
-    width:400px
+    width:6rem;
   }
   input{
-    width: 250px;
+    width: 4rem;
   }
   .box{
     flex-direction: column;
@@ -149,6 +149,6 @@ footer{
 }
 @media screen and (max-width:500px){
   .container,.box,.sport-box{
-    width: 250px;
+    width: 3rem;
   }
 }
