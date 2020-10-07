@@ -78,7 +78,7 @@ label {
 }
 input {
     padding: 15px;
-    width: 30rem;
+    width: 20rem;
     border-radius: 5px;
     border: 2px solid black;
     outline: none;
@@ -86,7 +86,7 @@ input {
 }
 button {
     background-color: blue;
-    border: 1px solid black;
+    border: 1px solid blue;
     margin: 5px 10px 20px 20px;
     padding: 10px;
     border-radius: 3px;
@@ -102,7 +102,7 @@ span {
     padding: 20px;
     margin: 15px auto;
     border-radius: 5px;
-    width: 30rem;
+    width: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,25 +134,17 @@ footer {
     align-items: center;
     margin-top: 100px;
 }
-/*
-@media screen and (max-width: 768px) {
-    .container,
-    .box,
-    .sport-box {
-        width: 6rem;
+@media screen and (min-width: 1200px) {
+    .sport-box,
+    input,
+    .details {
+        width: 50rem;
     }
-    input {
-        width: 4rem;
+    .img {
+        width: 350px;
+        height: 250px;
     }
-    .box {
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 500px) {
-    .container,
-    .box,
-    .sport-box {
-        width: 3rem;
+    .img-div {
+        padding: 40px;
     }
 }
-*/

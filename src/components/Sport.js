@@ -37,7 +37,7 @@ export default function Sport() {
                 <Link to="/">Home</Link>
             </header>
             <div className="body">
-                <h2 className="title">Check the Football data for any city</h2>
+                <h2 className="title">Check latest matches in your city</h2>
                 <div className="form">
                     <label>Enter any City</label>
                     <input
